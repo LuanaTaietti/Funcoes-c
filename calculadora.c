@@ -4,7 +4,7 @@ double somar(double num_a, double num_b) {
     return num_a + num_b;
 }
 
-double subtrair(souble num_a, double num_b) {
+double subtrair(double num_a, double num_b) {
     return num_a - num_b;
 }
 
@@ -14,29 +14,30 @@ int main() {
     double resultado;
 
     printf("Digite um número: ");
-    scanf("%lf" , &num_1);
+    scanf("%lf", &num_1);
 
     printf("Digite um número: ");
-    scanf("%lf" , &num_2);
+    scanf("%lf", &num_2);
 
-    printf("Selecione a operação:\n");
+    printf("Selecione a Operação:\n");
     printf("1 - Somar\n");
     printf("2 - Subtrair\n");
     printf(": ");
-    scanf("%d" , &operacao);
+    scanf("%d", &operacao);
 
-    switch (operacao) { //switch: usado para comparação de strings(caracteres) e inteiros 
+    switch (operacao) {
         case 1:
-            resultado = somar(num_1,num_2);
+            resultado = somar(num_1, num_2);
             break;
         case 2:
             resultado = subtrair(num_1, num_2);
             break;
-        default: 
+        default:
             printf("Opção inválida\n");
     }
 
-    printf("Resultado: %.2lf\n" , resultado);
+    printf("Resultado: %.2lf\n", resultado);
+    
 
     return 0;
 }
